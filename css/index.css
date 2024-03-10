@@ -1,0 +1,140 @@
+@import url(./colors.css);
+@import url(./styles.css);
+
+:root {
+	--card-height: 50vw;
+	--card-margin: 8vw;
+	--card-top-offset: 5em;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+
+.background {
+	position: absolute;
+	background: url("../assets/images/backgrounds/circle-specs.png"), var(--offwhite);
+	z-index: 1;
+	overflow: hidden;
+	background-attachment: fixed !important;
+	background-position: center !important;
+	background-size: cover !important;
+	height: 200vh;
+}
+
+.main {
+	z-index: 2;
+}
+
+.hero {
+	overflow: hidden !important;
+	height: fit-content;
+}
+
+.circles {
+	position: absolute;
+	top: 0;
+	background: url("../assets/images/backgrounds/circles.png");
+	background-size:auto;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+}
+
+.elements{
+	width: 120%;
+	transform: rotate(-2deg);
+	position: relative;
+	bottom: -2rem;
+	margin-left: -3rem;
+	z-index: 5;
+	overflow: hidden;
+}
+
+#element2 {
+	top: -7rem;
+	width: 150%;
+}
+
+#element3 {
+	bottom: -8rem;
+	width: 150%;
+	transform: rotate(2deg);
+}
+
+.prof-pic {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.snakes {
+	background: url("../assets/images/elements/snakes.png");
+	min-height: 150px;
+	width: 100% !important;
+	background-size:auto;
+	background-repeat: no-repeat;
+	margin-bottom: -2rem;
+}
+
+.title {
+	font-size: 5rem;
+}
+
+.btn {
+	background: rgb(188 87 36);
+	color: rgb(255 255 255);
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.5em;
+	border-radius: 0.25em;
+}
+
+.overlap {
+	width: 120%;
+	height: 200px;
+	position: relative;
+	box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.329);
+}
+
+.frames {
+	height: fit-content;
+}
+#introduction {
+	z-index: 10;
+}
+
+.rectangle {
+	background: url('../assets/images/elements/box.png');
+	width: 250px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.shade {
+	background: url('../assets/images/elements/shade.png');
+	margin-left: -0.3rem;
+}
+
+.full-shade {
+	width: 90%;
+}
+
+.scrolling-text {
+	white-space: nowrap;
+}
+
+@media (max-width: 991.98px) { 
+	.hero-content {
+		padding: 1rem !important;
+	}
+
+	.title {
+		font-size: 3rem;
+	}
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+    .background {
+        background-attachment: scroll;
+    }
+}

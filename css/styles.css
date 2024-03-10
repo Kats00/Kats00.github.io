@@ -1,0 +1,123 @@
+@import url(./colors.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.patrick-hand {
+    font-family: Patrick Hand SC, cursive;
+}
+
+.navbar, .container-fluid {
+    width: 100% !important; 
+}
+
+.bg-body-tertiary {
+    background-color: var(--grey) !important;
+}
+
+.centered {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.text-offwhite {
+    color: var(--offwhite);
+}
+
+.offwhite{
+    background-color: var(--offwhite);
+}
+
+.black {
+    background-color: var(--black);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+.violet01{
+    background-color: var(--violet01);
+}
+
+.violet02{
+    background-color: var(--violet02);
+}
+
+
+.violet03{
+    background-color: var(--violet03);
+}
+
+.img-fill {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.fit-content {
+    width: max-content;
+    overflow: hidden;
+}
+
+.overflow-hiddem {
+    overflow: hidden;
+}
+
+.overflowy-hiddem {
+    overflow-y: hidden;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.rubik-doodle shadow-regular {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.palanquin-dark-regular {
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.palanquin-dark-medium {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.palanquin-dark-semibold {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.palanquin-dark-bold {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+  
+.patrick-hand sc-regular {
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
