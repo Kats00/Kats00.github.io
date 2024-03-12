@@ -7,12 +7,39 @@
     overflow-x: hidden;
 }
 
+.footer-hr {
+    height: 1px;
+    background-color: var(--offwhite);
+    border: none;
+    opacity: 0.1;
+}
+
 .patrick-hand {
     font-family: Patrick Hand SC, cursive;
 }
 
 .navbar, .container-fluid {
     width: 100% !important; 
+}
+
+.nav-item a {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item a:hover:after {
+    content: " ";
+    position: absolute;
+    bottom: -0.2rem;
+    height: 20px;
+    width: 80%;
+    transform: translateX(10%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200' zoomAndPan='magnify' viewBox='0 0 150 30.000001' height='40' preserveAspectRatio='xMidYMid meet' version='1.0'%3E%3Cdefs%3E%3CclipPath id='4cca25e1ed'%3E%3Cpath d='M 5.324219 10.730469 L 146 10.730469 L 146 17.988281 L 5.324219 17.988281 Z M 5.324219 10.730469 ' clip-rule='nonzero'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%234cca25e1ed)'%3E%3Cpath fill='%23e1e1e1' d='M 144.140625 14.738281 C 136.160156 14.570312 128.183594 14.445312 120.203125 14.363281 C 120.796875 14.222656 121.3125 13.992188 121.664062 13.601562 C 121.878906 13.363281 121.761719 13 121.65625 12.753906 C 121.570312 12.546875 121.371094 12.082031 120.992188 12.015625 C 113.960938 10.777344 106.566406 10.875 99.335938 10.941406 C 91.792969 11.011719 84.25 11.203125 76.722656 11.523438 C 61.695312 12.152344 46.804688 13.375 31.941406 14.90625 C 27.734375 15.339844 23.519531 15.765625 19.304688 16.183594 C 17.269531 16.382812 15.234375 16.574219 13.195312 16.75 C 12.136719 16.839844 11.078125 16.9375 10.015625 17.03125 C 9.492188 17.078125 8.964844 17.132812 8.4375 17.183594 C 8.261719 17.199219 8.085938 17.214844 7.910156 17.230469 C 7.605469 17.261719 7.300781 17.285156 6.992188 17.308594 C 6.742188 17.367188 6.492188 17.4375 6.25 17.507812 C 5.980469 17.566406 5.542969 17.683594 5.40625 17.859375 C 5.335938 17.945312 5.328125 18.003906 5.40625 18.03125 C 5.402344 18.03125 5.398438 18.03125 5.398438 18.03125 C 5.722656 18.089844 5.957031 18.15625 6.292969 18.15625 C 6.480469 18.152344 6.667969 18.148438 6.851562 18.144531 C 7.320312 18.132812 7.789062 18.121094 8.257812 18.109375 C 8.433594 18.101562 8.613281 18.09375 8.789062 18.089844 C 9.515625 18.148438 10.242188 18.21875 10.960938 18.257812 C 11.035156 18.261719 10.882812 18.082031 10.789062 18.074219 C 10.636719 18.054688 10.480469 18.039062 10.328125 18.023438 C 10.664062 18.007812 11 17.992188 11.335938 17.980469 C 13.28125 17.902344 15.222656 17.75 17.160156 17.613281 '/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: myunderline 0.3s ease forwards;
 }
 
 .bg-body-tertiary {
@@ -26,7 +53,7 @@
 }
 
 .text-offwhite {
-    color: var(--offwhite);
+    color: var(--offwhite) !important;
 }
 
 .offwhite{
@@ -38,7 +65,7 @@
 }
 
 .grey {
-    background-color: var(--grey);
+    background-color: var(--grey) !important;
 }
 
 .violet01{
@@ -73,12 +100,24 @@
     overflow: hidden;
 }
 
-.overflow-hiddem {
+.overflow-hidden {
     overflow: hidden;
 }
 
-.overflowy-hiddem {
+.overflowy-hidden {
     overflow-y: hidden;
+}
+
+.overflow-visible {
+    overflow: visible !important;
+}
+
+.overflowy-scroll {
+    overflow-y: scroll !important;
+}
+
+.overflowy-auto {
+    overflow-y: auto !important;
 }
 
 .bold {
@@ -120,4 +159,40 @@
     font-weight: 400;
     font-style: normal;
 }
-  
+
+.px-7vw {
+    padding: 0 8vw;
+}
+
+.no-decor {
+    text-decoration: none !important;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+
+.no-border {
+    border: none;
+}
+
+.hidden-scroll {
+    scrollbar-width: 0px;
+}
+
+.px-7vw-left{
+    padding-left: 10vw;
+}
+
+.px-7vw-right {
+    padding-right: 6vw;
+}
+
+@keyframes myunderline {
+    from {
+        width: 0;
+    }
+    to {
+        width:100%;
+    }
+}
