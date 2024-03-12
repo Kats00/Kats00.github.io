@@ -194,12 +194,11 @@
 }
   
 .timeline-content {
-	padding: 20px;
+	position: relative;
 	border: dashed 2px var(--offwhite);
 	border-radius: 5px;
 	padding: 1.75rem;
 	transition: 0.4s ease;
-	overflow-wrap: break-word !important;
 	margin: 1rem;
 	margin-bottom: 20px;
 	border-radius: 6px;
