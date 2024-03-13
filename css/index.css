@@ -95,8 +95,27 @@
 .frames {
 	height: fit-content;
 }
-#introduction {
-	z-index: 10;
+
+.circle-grade {
+	width: 20px;
+	height: 20px;
+	right: 1rem;
+	transform: translateY(80%);
+	border-radius: 100%;
+	z-index: 2;
+	background: var(--grey);
+}
+
+.circle-grade::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: dashed 1px var(--offwhite);
+	transform: translateX(-20%);
+	top: -0.2rem;
+	z-index: 1;
 }
 
 .rectangle {
@@ -276,6 +295,13 @@
 
 	.title {
 		font-size: 3rem;
+	}
+
+}
+
+@media (min-width: 991.98px) { 
+	.skills-container {
+		transform: translateX(-5%);
 	}
 }
 
