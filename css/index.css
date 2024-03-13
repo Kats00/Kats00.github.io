@@ -38,7 +38,7 @@
 
 .elements{
 	width: 120%;
-	transform: rotate(-2deg);
+	transform: rotate(-1.3deg);
 	position: relative;
 	bottom: -2rem;
 	margin-left: -3rem;
@@ -64,12 +64,12 @@
 }
 
 .snakes {
-	background: url("../assets/images/elements/snakes.png");
+	background: url("../assets/images/elements/snakes3.png");
 	min-height: 150px;
 	width: 100% !important;
 	background-size:auto;
-	background-repeat: no-repeat;
-	margin-bottom: -2rem;
+	background-repeat: repeat-x;
+
 }
 
 .title {
